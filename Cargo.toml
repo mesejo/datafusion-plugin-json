@@ -1,0 +1,12 @@
+[package]
+name = "datafusion-plugin-json"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+datafusion = "41.0.0"
+datafusion-functions-json = "0.41.0"
+datafusion-plugin-core = { git = "https://github.com/mesejo/datafusion-plugin-core.git", rev = "233dc5b4a7749c254e17b9c168440240eb7e022a" }
